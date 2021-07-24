@@ -1,0 +1,3 @@
+15:21:19,214  INFO faslogger:19 â?? The Test Suite is  starting :  23/05/20 15:21:19
+15:21:19,214  INFO faslogger:75 â?? Configuring the Environment started ..............
+15:21:19,355  INFO faslogger:39 â?? Setting chrome browser to selenium webdriver

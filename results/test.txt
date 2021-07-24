@@ -1,0 +1,3 @@
+23/05/2020 15:21:19 faslogger The Test Suite is  starting :  23/05/20 15:21:19
+23/05/2020 15:21:19 faslogger Configuring the Environment started ..............
+23/05/2020 15:21:19 faslogger Setting chrome browser to selenium webdriver

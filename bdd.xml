@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <!-- Listners implemented in below location -->
+<!--    <listeners>-->
+<!--        <listener class-name="test.java.bdd.cucumberTestng.listener.ITestImplementation"></listener>-->
+<!--    </listeners>-->
+    <test verbose="2" preserve-order="true" name="UAT">
+        <classes>
+            <class name="test.java.bdd.cucumberTestng.TestRunner"></class>
+        </classes>
+    </test>
+</suite>
