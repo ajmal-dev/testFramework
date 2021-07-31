@@ -39,8 +39,6 @@ public class LpLoginPage
     public void clickLoginButton()
     {
         browserFunctions.click(login_button);
-
-
     }
 
 

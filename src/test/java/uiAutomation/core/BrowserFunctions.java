@@ -6,7 +6,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class BrowserFunctions
@@ -33,6 +35,12 @@ public class BrowserFunctions
 
         // Initially bellow given if condition will check ready state of page.
 
+    }
+
+    public void switch_to_window(int tab_number)
+    {
+        List<String> handles=new ArrayList<>(Base.driver.getWindowHandles());
+        Base.driver.switchTo().window(handles.get(tab_number));
     }
     //***************** hover element *****************************
     public void hoverClick(By Hover_element,By click_element) {

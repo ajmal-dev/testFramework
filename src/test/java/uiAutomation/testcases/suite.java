@@ -10,7 +10,7 @@ public class suite
 
 {
     @Parameters({"browser"})
-    @BeforeTest(groups = {"functionaltesting"})
+    @BeforeTest()
     public void beforetest(@Optional String browser) throws IOException, InterruptedException
     {
 //        TestCaseLibrary testcaseutility=new TestCaseLibrary();
@@ -22,10 +22,22 @@ public class suite
 
     }
 
-    @AfterTest(groups = {"functionaltesting"})
+    @AfterTest()
     void endTest() throws EmailException, IOException
     {
 
         Base.driver.quit();
     }
+    @BeforeClass()
+    void beforemethod()
+    {
+        System.out.println("Class is starting");
+    }
+    @AfterClass()
+    void aftermethod()
+    {
+        System.out.println("class ended");
+    }
+
+
 }

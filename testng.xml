@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" >
 
     <listeners>
         <listener class-name="test.java.uiAutomation.core.TestListener" />
@@ -8,13 +8,17 @@
     <test name="cucumberTest">
         <classes>
             <class name="test.java.uiAutomation.testcases.suite"/>
-            <class name="test.java.uiAutomation.testcases.DistrictUserLogin"/>
+            <class name="test.java.uiAutomation.testcases.Login"/>
+            <class name="test.java.uiAutomation.testcases.login2"/>
         </classes>
     </test>
-    <!-- Test completed-->
+    <test name="cucumberTest1">
+        <classes>
+            <class name="test.java.uiAutomation.testcases.suite"/>
+            <class name="test.java.uiAutomation.testcases.Login"/>
+            <class name="test.java.uiAutomation.testcases.login2"/>
+        </classes>
+    </test>
 
-<!--    <listeners>-->
-<!--        <listener class-name="test.java.bdd.cucumberTestng.listener.ITestImplementation"></listener>-->
-<!--    </listeners>-->
 
 </suite>

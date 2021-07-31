@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="testFramework" />
         <module name="test_automation" />
+        <module name="test framework" />
       </profile>
     </annotationProcessing>
   </component>
