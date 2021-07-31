@@ -8,7 +8,103 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">All Test Suite</th></tr>
+<tr><td><a href="#t0">cucumberTest</a></td><td class="num">0</td><td class="num attn">2</td><td class="num attn">2</td><td class="num">4,258</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">cucumberTest1</a></td><td class="num">0</td><td class="num attn">2</td><td class="num attn">2</td><td class="num">2,463</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num attn">4</th><th class="num attn">4</th><th class="num">6,721</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead></table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">cucumberTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">test.java.uiAutomation.testcases.Login</td><td><a href="#m0">loginAsCampusUser</a></td><td rowspan="1">1627724669819</td><td rowspan="1">26</td></tr><tr class="failedeven"><td><a href="#m1">loginAsDistrictuser</a></td><td rowspan="1">1627724669078</td><td rowspan="1">731</td></tr><tr><th colspan="4">cucumberTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">test.java.uiAutomation.testcases.login2</td><td><a href="#m2">loginAsCampusUser</a></td><td rowspan="1">1627724669849</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">loginAsDistrictuser</a></td><td rowspan="1">1627724669848</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">cucumberTest1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">test.java.uiAutomation.testcases.Login</td><td><a href="#m4">loginAsCampusUser</a></td><td rowspan="1">1627724672584</td><td rowspan="1">36</td></tr><tr class="failedeven"><td><a href="#m5">loginAsDistrictuser</a></td><td rowspan="1">1627724672140</td><td rowspan="1">441</td></tr><tr><th colspan="4">cucumberTest1 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">test.java.uiAutomation.testcases.login2</td><td><a href="#m6">loginAsCampusUser</a></td><td rowspan="1">1627724672624</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m7">loginAsDistrictuser</a></td><td rowspan="1">1627724672624</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>cucumberTest</h2><h3 id="m0">test.java.uiAutomation.testcases.Login#loginAsCampusUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;login_username&apos;]&quot;}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;UW-IN-LPT0077&apos;, ip: &apos;172.26.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1827a8599508e60b8ec4d145e04cca4b
+*** Element info: {Using=xpath, value=//input[@id=&apos;login_username&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at test.java.uiAutomation.core.BrowserFunctions.enterData(BrowserFunctions.java:101)
+	at test.java.uiAutomation.pagefactory.LpLoginPage.enterusername(LpLoginPage.java:26)
+	at test.java.uiAutomation.testcases.Login.loginAsCampusUser(Login.java:27)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test.java.uiAutomation.testcases.Login#loginAsDistrictuser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=92.0.4515.107)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;UW-IN-LPT0077&apos;, ip: &apos;172.26.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1827a8599508e60b8ec4d145e04cca4b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at test.java.uiAutomation.core.BrowserFunctions.goTo(BrowserFunctions.java:127)
+	at test.java.uiAutomation.pagefactory.LpLoginPage.gotoLp(LpLoginPage.java:36)
+	at test.java.uiAutomation.testcases.Login.loginAsDistrictuser(Login.java:16)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test.java.uiAutomation.testcases.login2#loginAsCampusUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method login2.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@21de60b4] depends on not successfully finished methods in group &quot;1&quot;
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test.java.uiAutomation.testcases.login2#loginAsDistrictuser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method login2.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@21de60b4] depends on not successfully finished methods in group &quot;1&quot;
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>cucumberTest1</h2><h3 id="m4">test.java.uiAutomation.testcases.Login#loginAsCampusUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;login_username&apos;]&quot;}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;UW-IN-LPT0077&apos;, ip: &apos;172.26.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e78125fb92f15f9556e342a3b4531f48
+*** Element info: {Using=xpath, value=//input[@id=&apos;login_username&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at test.java.uiAutomation.core.BrowserFunctions.enterData(BrowserFunctions.java:101)
+	at test.java.uiAutomation.pagefactory.LpLoginPage.enterusername(LpLoginPage.java:26)
+	at test.java.uiAutomation.testcases.Login.loginAsCampusUser(Login.java:27)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">test.java.uiAutomation.testcases.Login#loginAsDistrictuser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=92.0.4515.107)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;UW-IN-LPT0077&apos;, ip: &apos;172.26.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e78125fb92f15f9556e342a3b4531f48
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at test.java.uiAutomation.core.BrowserFunctions.goTo(BrowserFunctions.java:127)
+	at test.java.uiAutomation.pagefactory.LpLoginPage.gotoLp(LpLoginPage.java:36)
+	at test.java.uiAutomation.testcases.Login.loginAsDistrictuser(Login.java:16)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">test.java.uiAutomation.testcases.login2#loginAsCampusUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method login2.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@41fbdac4] depends on not successfully finished methods in group &quot;1&quot;
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">test.java.uiAutomation.testcases.login2#loginAsDistrictuser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method login2.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@41fbdac4] depends on not successfully finished methods in group &quot;1&quot;
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

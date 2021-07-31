@@ -22,8 +22,7 @@ public class RemoteDriver
             try
             {
                 Base.log.info("Setting the selenium driver ..............");
-                driver = new org.openqa.selenium.remote.RemoteWebDriver(url, dc);
-                driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+                driver = new RemoteWebDriver(url, dc);
             }
             catch (Exception e)
             {
@@ -39,7 +38,6 @@ public class RemoteDriver
             {
                 Base.log.info("Setting the selenium driver ..............");
                 driver = new org.openqa.selenium.remote.RemoteWebDriver(url, dc);
-                driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
             }
             catch (Exception e)
             {

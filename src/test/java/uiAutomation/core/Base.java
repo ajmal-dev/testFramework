@@ -15,6 +15,7 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.*;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.*;
 import java.text.DateFormat;
@@ -24,7 +25,7 @@ import java.util.*;
 public class Base
 {
     //****************Add All the constants here*******************
-    public static org.openqa.selenium.remote.RemoteWebDriver driver;    //Global Remote driver
+    public static RemoteWebDriver driver;    //Global Remote driver
     public final  String applicationUrl = Base.propertiesRead("applicationUrl");
     private static List<String> screenshotspathlist=new ArrayList<>();
     private static ExtentSparkReporter htmlReporter=new ExtentSparkReporter(Base.propertiesRead("extentReportPath"));
@@ -75,14 +76,11 @@ public class Base
         Base.log.info("Configuring the Environment started ..............");
         try
         {
-            if (Base.propertiesRead("environment").equalsIgnoreCase("local") && Base.propertiesRead("parallelexecution").equalsIgnoreCase("false")) {
+            if (Base.propertiesRead("environment").equalsIgnoreCase("local")) {
                 Base.driver = WebDriver.launchwebdriver(Base.propertiesRead("webbrowser"));
-            } else if (Base.propertiesRead("environment").equalsIgnoreCase("local") && Base.propertiesRead("parallelexecution").equalsIgnoreCase("true")) {
-                Base.driver = WebDriver.launchwebdriver(browser);
-            } else if (Base.propertiesRead("environment").equalsIgnoreCase("docker") && Base.propertiesRead("parallelexecution").equalsIgnoreCase("false")) {
+            }
+            else if (Base.propertiesRead("environment").equalsIgnoreCase("docker") ) {
                 Base.driver = RemoteDriver.launching(Base.propertiesRead("webbrowser")); //Launch the browser
-            } else if (Base.propertiesRead("parallelexecution").equalsIgnoreCase("true") && Base.propertiesRead("environment").equalsIgnoreCase("docker")) {
-                Base.driver = RemoteDriver.launching(browser);
             }
         }
         catch(IOException e)

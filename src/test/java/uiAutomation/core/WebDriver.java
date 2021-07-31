@@ -20,15 +20,14 @@ public class WebDriver
         try {
 
             if
-            (
-                    browser.equalsIgnoreCase("chrome")&& Base.propertiesRead("os").equalsIgnoreCase("linux")&&Base.propertiesRead("parallelexecution").equalsIgnoreCase("false")) {
+            (browser.equalsIgnoreCase("chrome")) {
                 Base.log.info("Setting chrome browser to selenium webdriver");
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
                 driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
                 Base.log.info("Environment set successfully in Chrome browser for linux os success!!!");
             }
-            else if (browser.equalsIgnoreCase("firefox")&& Base.propertiesRead("os").equalsIgnoreCase("linux")&&Base.propertiesRead("parallelexecution").equalsIgnoreCase("false"))
+            else if (browser.equalsIgnoreCase("firefox"))
             {
                 Base.log.info("Setting firefox browser to selenium webdriver");
                 WebDriverManager.firefoxdriver().setup();
@@ -36,55 +35,7 @@ public class WebDriver
                 driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
                 Base.log.info("Environment set successfully in Firefox browser for linux os success!!!");
             }
-            else if((browser.equalsIgnoreCase("chrome")&& Base.propertiesRead("os").equalsIgnoreCase("windows"))&&Base.propertiesRead("parallelexecution").equalsIgnoreCase("false"))
-            {
-                Base.log.info("Setting chrome browser to selenium webdriver");
-                WebDriverManager.chromedriver().setup();
-//                System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
-                driver = new ChromeDriver();
-//                driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-                Base.log.info("Environment set successfully in Chrome browser for windows os success!!!");
-            }
-            else if(browser.equalsIgnoreCase("firefox")&& Base.propertiesRead("os").equalsIgnoreCase("windows")&&Base.propertiesRead("parallelexecution").equalsIgnoreCase("false"))
-            {
-                Base.log.info("Setting firefox browser to selenium webdriver");
-                WebDriverManager.firefoxdriver().setup();
-                driver = new FirefoxDriver();
-                driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-                Base.log.info("Environment set successfully in firefox browser for windows os success!!!");
-            }
-            else if (browser.equalsIgnoreCase("chrome")&&Base.propertiesRead("os").equalsIgnoreCase("windows")&&Base.propertiesRead("parallelexecution").equalsIgnoreCase("true"))
-            {
-                Base.log.info("Setting chrome browser to selenium webdriver");
-                WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
-                driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-                Base.log.info("Environment set successfully in Chrome browser for windows os success!!!");
-            }
-            else if(browser.equalsIgnoreCase("chrome")&&Base.propertiesRead("os").equalsIgnoreCase("linux")&&Base.propertiesRead("parallelexecution").equalsIgnoreCase("true"))
-            {
-                Base.log.info("Setting chrome browser to selenium webdriver");
-                WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
-                driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-                Base.log.info("Environment set successfully in Chrome browser for linux os success!!!");
-            }
-            else if(browser.equalsIgnoreCase("firefox")&&Base.propertiesRead("os").equalsIgnoreCase("windows")&&Base.propertiesRead("parallelexecution").equalsIgnoreCase("true"))
-            {
-                Base.log.info("Setting firefox browser to selenium webdriver");
-                WebDriverManager.firefoxdriver().setup();
-                driver = new FirefoxDriver();
-                driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-                Base.log.info("Environment set successfully in Chrome browser for linux os success!!!");
-            }
-            else if(browser.equalsIgnoreCase("firefox")&&Base.propertiesRead("os").equalsIgnoreCase("linux")&&Base.propertiesRead("parallelexecution").equalsIgnoreCase("true"))
-            {
-                Base.log.info("Setting firefox browser to selenium webdriver");
-                WebDriverManager.firefoxdriver().setup();
-                driver = new FirefoxDriver();
-                driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-                Base.log.info("Environment set successfully in firefox browser for linux os success!!!");
-            }
+
         }
         catch (NullPointerException  e)
         {

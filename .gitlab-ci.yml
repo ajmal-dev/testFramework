@@ -1,11 +1,7 @@
 image: docker:latest
 services:
   - docker:18.09.7-dind
-
-variables:
-  IMAGE_TAG: "registry.gitlab.com/hgc-global-communications/testcasecontainerimage:latest"
-  DOCKER_HOST: tcp://docker:2375/
-
+  -
 cache:
   paths:
     - .m2/repository/
@@ -14,53 +10,30 @@ cache:
 
 stages:
   - build
-  - package
   - test
 
 build:
   stage: build
   image: maven:3-jdk-8
   script:
-    - export DOCKER_HOST=tcp://localhost:2375
     - mvn clean package
-    - POM_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout -B)
-    - VERSION=$POM_VERSION-$CI_COMMIT_REF_SLUG-$CI_COMMIT_SHORT_SHA
-    - IMAGE_TAG=$CI_REGISTRY_IMAGE:$VERSION
-    - echo IMAGE_TAG="$(echo "$IMAGE_TAG")" > variable
-    - echo $IMAGE_TAG
-    - cd target
-    - touch itag.txt
-    - echo "$IMAGE_TAG" > itag.txt
-  artifacts:
-    paths:
-      - target/
-  only:
-    - master
-
-test:
-  stage: test
-  tags:
-    - AUTOTEST-H1N-TEST
-  before_script:
-    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
-  script:
-    - cd target/
-    - cat itag.txt
-    - IMAGETAG=$(cat itag.txt)
-    - echo $IMAGETAG
-    - cd ..
-    - docker build --build-arg test_name=cucumberTest . -t $IMAGETAG
-    - docker push $IMAGETAG
-    - mkdir $(pwd)/target/tests
-    - docker pull $IMAGETAG
     - docker network create --subnet=172.12.0.0/16 container-network
     - docker run -d -p 4444:4444 --net=container-network --name=chromedebug selenium/standalone-chrome-debug:latest
     - docker run -d -p 5555:5555 --net=container-network --name=firefoxdebug selenium/standalone-firefox-debug:latest
-    - cd ..
-    - docker run -e testname='cucumberTest' --net=container-network -v  $(pwd)/target/tests:/results --name=testcontainer $IMAGETAG
+  artifacts:
+    paths:
+      - results/
+  only:
+    - development
+
+test:
+  stage: test
+  image: openjdk:8-jre-slim
+  script:
+    - java -cp target/testFramework-1.0-SNAPSHOT.jar:target/libs/* org.testng.TestNG -testnames "$testname" testng.xml
   artifacts:
     when: always
     paths:
       - target/
   only:
-    - master
+    - development
