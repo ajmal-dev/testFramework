@@ -1,7 +1,6 @@
 image: docker:latest
 services:
-  - docker:18.09.7-dind
-  -
+  - docker:20.10.7-dind
 cache:
   paths:
     - .m2/repository/
@@ -17,23 +16,24 @@ build:
   image: maven:3-jdk-8
   script:
     - mvn clean package
-    - docker network create --subnet=172.12.0.0/16 container-network
-    - docker run -d -p 4444:4444 --net=container-network --name=chromedebug selenium/standalone-chrome-debug:latest
-    - docker run -d -p 5555:5555 --net=container-network --name=firefoxdebug selenium/standalone-firefox-debug:latest
   artifacts:
     paths:
-      - results/
+      - target/
   only:
-    - development
+    - master
 
 test:
   stage: test
-  image: openjdk:8-jre-slim
   script:
-    - java -cp target/testFramework-1.0-SNAPSHOT.jar:target/libs/* org.testng.TestNG -testnames "$testname" testng.xml
+    - docker build . -t code:latest
+    - docker network create --subnet=172.12.0.0/16 container-network
+    - docker run -d -p 4444:4444 --net=container-network --name=chromedebug  selenium/standalone-chrome-debug:3.141.59-oxygen
+    - docker ps
+    - docker network inspect container-network
+    - docker run --net=container-network -v  $(pwd)/target/tests:/results --name=testcontainer code:latest
   artifacts:
     when: always
     paths:
       - target/
   only:
-    - development
+    - master

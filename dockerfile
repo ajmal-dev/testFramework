@@ -12,4 +12,4 @@ ADD  target/libs libs
 # Add the suite xmls
 ADD testng.xml testng.xml
 # Command line to execute the test
-ENTRYPOINT java -cp testFramework-1.0-SNAPSHOT.jar:libs/* org.testng.TestNG -testnames "$testname" testng.xml
+ENTRYPOINT java -cp testFramework-1.0-SNAPSHOT.jar:libs/* org.testng.TestNG  testng.xml
