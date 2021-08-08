@@ -2,44 +2,114 @@
 <testng-results skipped="4" failed="4" ignored="0" total="8" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="All Test Suite" duration-ms="7155" started-at="2021-07-31T09:44:26Z" finished-at="2021-07-31T09:44:33Z">
+  <suite name="All Test Suite" duration-ms="24702" started-at="2021-08-08T06:42:05Z" finished-at="2021-08-08T06:42:30Z">
     <groups>
       <group name="1">
-        <method signature="Login.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.Login@1700915]" name="loginAsCampusUser" class="test.java.uiAutomation.testcases.Login"/>
-        <method signature="Login.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.Login@1700915]" name="loginAsDistrictuser" class="test.java.uiAutomation.testcases.Login"/>
-        <method signature="Login.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.Login@647e447]" name="loginAsCampusUser" class="test.java.uiAutomation.testcases.Login"/>
-        <method signature="Login.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.Login@647e447]" name="loginAsDistrictuser" class="test.java.uiAutomation.testcases.Login"/>
+        <method signature="Login.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.Login@29ba4338]" name="loginAsCampusUser" class="test.java.uiAutomation.testcases.Login"/>
+        <method signature="Login.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.Login@29ba4338]" name="loginAsDistrictuser" class="test.java.uiAutomation.testcases.Login"/>
+        <method signature="Login.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.Login@3bbc39f8]" name="loginAsCampusUser" class="test.java.uiAutomation.testcases.Login"/>
+        <method signature="Login.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.Login@3bbc39f8]" name="loginAsDistrictuser" class="test.java.uiAutomation.testcases.Login"/>
       </group> <!-- 1 -->
     </groups>
-    <test name="cucumberTest" duration-ms="4258" started-at="2021-07-31T09:44:26Z" finished-at="2021-07-31T09:44:30Z">
-      <class name="test.java.uiAutomation.testcases.Login">
-        <test-method status="PASS" signature="beforeclass()[pri:0, instance:test.java.uiAutomation.testcases.Login@1700915]" name="beforeclass" is-config="true" duration-ms="1" started-at="2021-07-31T09:44:29Z" finished-at="2021-07-31T09:44:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeclass -->
-        <test-method status="PASS" signature="beforemethod()[pri:0, instance:test.java.uiAutomation.testcases.Login@1700915]" name="beforemethod" is-config="true" duration-ms="1" started-at="2021-07-31T09:44:29Z" finished-at="2021-07-31T09:44:29Z">
+    <test name="cucumberTest" duration-ms="8796" started-at="2021-08-08T06:42:05Z" finished-at="2021-08-08T06:42:14Z">
+      <class name="test.java.uiAutomation.testcases.login2">
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:test.java.uiAutomation.testcases.login2@57175e74]" name="beforemethod" is-config="true" duration-ms="1" started-at="2021-08-08T06:42:13Z" finished-at="2021-08-08T06:42:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method status="FAIL" signature="loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.Login@1700915]" name="loginAsDistrictuser" duration-ms="731" started-at="2021-07-31T09:44:29Z" finished-at="2021-07-31T09:44:29Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="SKIP" signature="loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@57175e74]" name="loginAsDistrictuser" duration-ms="0" depends-on-groups="1" started-at="2021-08-08T06:42:13Z" finished-at="2021-08-08T06:42:13Z">
+          <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: chrome=92.0.4515.107)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'UW-IN-LPT0077', ip: '172.26.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1827a8599508e60b8ec4d145e04cca4b]]>
+              <![CDATA[Method login2.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@57175e74] depends on not successfully finished methods in group "1"]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: chrome=92.0.4515.107)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'UW-IN-LPT0077', ip: '172.26.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+              <![CDATA[java.lang.Throwable: Method login2.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@57175e74] depends on not successfully finished methods in group "1"
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsDistrictuser -->
+        <test-method status="SKIP" signature="loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@57175e74]" name="loginAsCampusUser" duration-ms="1" depends-on-groups="1" started-at="2021-08-08T06:42:13Z" finished-at="2021-08-08T06:42:13Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method login2.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@57175e74] depends on not successfully finished methods in group "1"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method login2.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@57175e74] depends on not successfully finished methods in group "1"
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsCampusUser -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:test.java.uiAutomation.testcases.login2@57175e74]" name="aftermethod" is-config="true" duration-ms="0" started-at="2021-08-08T06:42:13Z" finished-at="2021-08-08T06:42:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+      </class> <!-- test.java.uiAutomation.testcases.login2 -->
+      <class name="test.java.uiAutomation.testcases.Login">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:test.java.uiAutomation.testcases.Login@29ba4338]" name="beforeclass" is-config="true" duration-ms="0" started-at="2021-08-08T06:42:07Z" finished-at="2021-08-08T06:42:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="FAIL" signature="loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.Login@29ba4338]" name="loginAsDistrictuser" duration-ms="5657" started-at="2021-08-08T06:42:07Z" finished-at="2021-08-08T06:42:13Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.131)
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'UW-IN-LPT0077', ip: '10.212.134.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1827a8599508e60b8ec4d145e04cca4b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f21320d4416063ef5204746841341d58
+*** Element info: {Using=xpath, value=//input[@id='login_username']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.131)
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'UW-IN-LPT0077', ip: '10.212.134.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f21320d4416063ef5204746841341d58
+*** Element info: {Using=xpath, value=//input[@id='login_username']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -50,10 +120,13 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at test.java.uiAutomation.core.BrowserFunctions.goTo(BrowserFunctions.java:127)
-at test.java.uiAutomation.pagefactory.LpLoginPage.gotoLp(LpLoginPage.java:36)
-at test.java.uiAutomation.testcases.Login.loginAsDistrictuser(Login.java:16)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at test.java.uiAutomation.core.BrowserFunctions.enterData(BrowserFunctions.java:101)
+at test.java.uiAutomation.pagefactory.LpLoginPage.enterusername(LpLoginPage.java:26)
+at test.java.uiAutomation.testcases.Login.loginAsDistrictuser(Login.java:17)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -80,36 +153,44 @@ at org.testng.TestNG.privateMain(TestNG.java:1354)
 at org.testng.TestNG.main(TestNG.java:1323)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsDistrictuser -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:test.java.uiAutomation.testcases.Login@1700915]" name="aftermethod" is-config="true" duration-ms="0" started-at="2021-07-31T09:44:29Z" finished-at="2021-07-31T09:44:29Z">
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:test.java.uiAutomation.testcases.Login@29ba4338]" name="beforemethod" is-config="true" duration-ms="0" started-at="2021-08-08T06:42:07Z" finished-at="2021-08-08T06:42:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:test.java.uiAutomation.testcases.Login@29ba4338]" name="aftermethod" is-config="true" duration-ms="0" started-at="2021-08-08T06:42:13Z" finished-at="2021-08-08T06:42:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="FAIL" signature="loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.Login@1700915]" name="loginAsCampusUser" duration-ms="26" started-at="2021-07-31T09:44:29Z" finished-at="2021-07-31T09:44:29Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:test.java.uiAutomation.testcases.Login@29ba4338]" name="beforemethod" is-config="true" duration-ms="0" started-at="2021-08-08T06:42:13Z" finished-at="2021-08-08T06:42:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="FAIL" signature="loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.Login@29ba4338]" name="loginAsCampusUser" duration-ms="9" started-at="2021-08-08T06:42:13Z" finished-at="2021-08-08T06:42:13Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='login_username']"}
-  (Session info: chrome=92.0.4515.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'UW-IN-LPT0077', ip: '172.26.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.131)
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'UW-IN-LPT0077', ip: '10.212.134.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1827a8599508e60b8ec4d145e04cca4b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f21320d4416063ef5204746841341d58
 *** Element info: {Using=xpath, value=//input[@id='login_username']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='login_username']"}
-  (Session info: chrome=92.0.4515.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'UW-IN-LPT0077', ip: '172.26.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.131)
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'UW-IN-LPT0077', ip: '10.212.134.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1827a8599508e60b8ec4d145e04cca4b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f21320d4416063ef5204746841341d58
 *** Element info: {Using=xpath, value=//input[@id='login_username']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -154,95 +235,21 @@ at org.testng.TestNG.privateMain(TestNG.java:1354)
 at org.testng.TestNG.main(TestNG.java:1323)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsCampusUser -->
-        <test-method status="PASS" signature="beforemethod()[pri:0, instance:test.java.uiAutomation.testcases.Login@1700915]" name="beforemethod" is-config="true" duration-ms="0" started-at="2021-07-31T09:44:29Z" finished-at="2021-07-31T09:44:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:test.java.uiAutomation.testcases.Login@1700915]" name="aftermethod" is-config="true" duration-ms="0" started-at="2021-07-31T09:44:29Z" finished-at="2021-07-31T09:44:29Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:test.java.uiAutomation.testcases.Login@29ba4338]" name="aftermethod" is-config="true" duration-ms="0" started-at="2021-08-08T06:42:13Z" finished-at="2021-08-08T06:42:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="afterclass()[pri:0, instance:test.java.uiAutomation.testcases.Login@1700915]" name="afterclass" is-config="true" duration-ms="1" started-at="2021-07-31T09:44:29Z" finished-at="2021-07-31T09:44:29Z">
+        <test-method status="PASS" signature="afterclass()[pri:0, instance:test.java.uiAutomation.testcases.Login@29ba4338]" name="afterclass" is-config="true" duration-ms="0" started-at="2021-08-08T06:42:13Z" finished-at="2021-08-08T06:42:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterclass -->
       </class> <!-- test.java.uiAutomation.testcases.Login -->
-      <class name="test.java.uiAutomation.testcases.login2">
-        <test-method status="PASS" signature="beforemethod()[pri:0, instance:test.java.uiAutomation.testcases.login2@21de60b4]" name="beforemethod" is-config="true" duration-ms="1" started-at="2021-07-31T09:44:29Z" finished-at="2021-07-31T09:44:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method status="SKIP" signature="loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@21de60b4]" name="loginAsDistrictuser" duration-ms="0" depends-on-groups="1" started-at="2021-07-31T09:44:29Z" finished-at="2021-07-31T09:44:29Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method login2.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@21de60b4] depends on not successfully finished methods in group "1"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method login2.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@21de60b4] depends on not successfully finished methods in group "1"
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.TestNG.privateMain(TestNG.java:1354)
-at org.testng.TestNG.main(TestNG.java:1323)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAsDistrictuser -->
-        <test-method status="SKIP" signature="loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@21de60b4]" name="loginAsCampusUser" duration-ms="0" depends-on-groups="1" started-at="2021-07-31T09:44:29Z" finished-at="2021-07-31T09:44:29Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method login2.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@21de60b4] depends on not successfully finished methods in group "1"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method login2.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@21de60b4] depends on not successfully finished methods in group "1"
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.TestNG.privateMain(TestNG.java:1354)
-at org.testng.TestNG.main(TestNG.java:1323)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAsCampusUser -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:test.java.uiAutomation.testcases.login2@21de60b4]" name="aftermethod" is-config="true" duration-ms="1" started-at="2021-07-31T09:44:29Z" finished-at="2021-07-31T09:44:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-      </class> <!-- test.java.uiAutomation.testcases.login2 -->
       <class name="test.java.uiAutomation.testcases.suite">
-        <test-method status="PASS" signature="beforetest(java.lang.String)[pri:0, instance:test.java.uiAutomation.testcases.suite@48ae9b55]" name="beforetest" is-config="true" duration-ms="2747" started-at="2021-07-31T09:44:26Z" finished-at="2021-07-31T09:44:29Z">
+        <test-method status="PASS" signature="beforetest(java.lang.String)[pri:0, instance:test.java.uiAutomation.testcases.suite@4206a205]" name="beforetest" is-config="true" duration-ms="2381" started-at="2021-08-08T06:42:05Z" finished-at="2021-08-08T06:42:07Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -251,111 +258,43 @@ at org.testng.TestNG.main(TestNG.java:1323)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:test.java.uiAutomation.testcases.suite@48ae9b55]" name="endTest" is-config="true" duration-ms="716" started-at="2021-07-31T09:44:29Z" finished-at="2021-07-31T09:44:30Z">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:test.java.uiAutomation.testcases.suite@4206a205]" name="endTest" is-config="true" duration-ms="727" started-at="2021-08-08T06:42:13Z" finished-at="2021-08-08T06:42:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- test.java.uiAutomation.testcases.suite -->
     </test> <!-- cucumberTest -->
-    <test name="cucumberTest1" duration-ms="2463" started-at="2021-07-31T09:44:31Z" finished-at="2021-07-31T09:44:33Z">
-      <class name="test.java.uiAutomation.testcases.login2">
-        <test-method status="PASS" signature="beforemethod()[pri:0, instance:test.java.uiAutomation.testcases.login2@41fbdac4]" name="beforemethod" is-config="true" duration-ms="0" started-at="2021-07-31T09:44:32Z" finished-at="2021-07-31T09:44:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method status="SKIP" signature="loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@41fbdac4]" name="loginAsCampusUser" duration-ms="1" depends-on-groups="1" started-at="2021-07-31T09:44:32Z" finished-at="2021-07-31T09:44:32Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method login2.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@41fbdac4] depends on not successfully finished methods in group "1"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method login2.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@41fbdac4] depends on not successfully finished methods in group "1"
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.TestNG.privateMain(TestNG.java:1354)
-at org.testng.TestNG.main(TestNG.java:1323)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAsCampusUser -->
-        <test-method status="SKIP" signature="loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@41fbdac4]" name="loginAsDistrictuser" duration-ms="0" depends-on-groups="1" started-at="2021-07-31T09:44:32Z" finished-at="2021-07-31T09:44:32Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method login2.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@41fbdac4] depends on not successfully finished methods in group "1"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method login2.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@41fbdac4] depends on not successfully finished methods in group "1"
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.TestNG.privateMain(TestNG.java:1354)
-at org.testng.TestNG.main(TestNG.java:1323)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAsDistrictuser -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:test.java.uiAutomation.testcases.login2@41fbdac4]" name="aftermethod" is-config="true" duration-ms="1" started-at="2021-07-31T09:44:32Z" finished-at="2021-07-31T09:44:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-      </class> <!-- test.java.uiAutomation.testcases.login2 -->
+    <test name="cucumberTest1" duration-ms="15590" started-at="2021-08-08T06:42:14Z" finished-at="2021-08-08T06:42:30Z">
       <class name="test.java.uiAutomation.testcases.Login">
-        <test-method status="PASS" signature="beforeclass()[pri:0, instance:test.java.uiAutomation.testcases.Login@647e447]" name="beforeclass" is-config="true" duration-ms="0" started-at="2021-07-31T09:44:32Z" finished-at="2021-07-31T09:44:32Z">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:test.java.uiAutomation.testcases.Login@3bbc39f8]" name="beforeclass" is-config="true" duration-ms="2" started-at="2021-08-08T06:42:15Z" finished-at="2021-08-08T06:42:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeclass -->
-        <test-method status="PASS" signature="beforemethod()[pri:0, instance:test.java.uiAutomation.testcases.Login@647e447]" name="beforemethod" is-config="true" duration-ms="1" started-at="2021-07-31T09:44:32Z" finished-at="2021-07-31T09:44:32Z">
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:test.java.uiAutomation.testcases.Login@3bbc39f8]" name="beforemethod" is-config="true" duration-ms="0" started-at="2021-08-08T06:42:15Z" finished-at="2021-08-08T06:42:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method status="FAIL" signature="loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.Login@647e447]" name="loginAsDistrictuser" duration-ms="441" started-at="2021-07-31T09:44:32Z" finished-at="2021-07-31T09:44:32Z">
+        <test-method status="FAIL" signature="loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.Login@3bbc39f8]" name="loginAsDistrictuser" duration-ms="1269" started-at="2021-08-08T06:42:15Z" finished-at="2021-08-08T06:42:17Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: chrome=92.0.4515.107)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'UW-IN-LPT0077', ip: '172.26.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=92.0.4515.131)
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'UW-IN-LPT0077', ip: '10.212.134.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e78125fb92f15f9556e342a3b4531f48]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edfa7e3167709ed01ae88f5b0987a535]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: chrome=92.0.4515.107)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'UW-IN-LPT0077', ip: '172.26.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=92.0.4515.131)
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'UW-IN-LPT0077', ip: '10.212.134.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e78125fb92f15f9556e342a3b4531f48
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edfa7e3167709ed01ae88f5b0987a535
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -400,36 +339,34 @@ at org.testng.TestNG.main(TestNG.java:1323)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsDistrictuser -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:test.java.uiAutomation.testcases.Login@647e447]" name="aftermethod" is-config="true" duration-ms="1" started-at="2021-07-31T09:44:32Z" finished-at="2021-07-31T09:44:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="beforemethod()[pri:0, instance:test.java.uiAutomation.testcases.Login@647e447]" name="beforemethod" is-config="true" duration-ms="1" started-at="2021-07-31T09:44:32Z" finished-at="2021-07-31T09:44:32Z">
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:test.java.uiAutomation.testcases.Login@3bbc39f8]" name="beforemethod" is-config="true" duration-ms="1" started-at="2021-08-08T06:42:17Z" finished-at="2021-08-08T06:42:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method status="FAIL" signature="loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.Login@647e447]" name="loginAsCampusUser" duration-ms="36" started-at="2021-07-31T09:44:32Z" finished-at="2021-07-31T09:44:32Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:test.java.uiAutomation.testcases.Login@3bbc39f8]" name="aftermethod" is-config="true" duration-ms="0" started-at="2021-08-08T06:42:17Z" finished-at="2021-08-08T06:42:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="FAIL" signature="loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.Login@3bbc39f8]" name="loginAsCampusUser" duration-ms="12359" started-at="2021-08-08T06:42:17Z" finished-at="2021-08-08T06:42:29Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='login_username']"}
-  (Session info: chrome=92.0.4515.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'UW-IN-LPT0077', ip: '172.26.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+              <![CDATA[chrome not reachable
+  (Session info: chrome=92.0.4515.131)
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'UW-IN-LPT0077', ip: '10.212.134.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e78125fb92f15f9556e342a3b4531f48
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edfa7e3167709ed01ae88f5b0987a535
 *** Element info: {Using=xpath, value=//input[@id='login_username']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='login_username']"}
-  (Session info: chrome=92.0.4515.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'UW-IN-LPT0077', ip: '172.26.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=92.0.4515.131)
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'UW-IN-LPT0077', ip: '10.212.134.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e78125fb92f15f9556e342a3b4531f48
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edfa7e3167709ed01ae88f5b0987a535
 *** Element info: {Using=xpath, value=//input[@id='login_username']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -474,21 +411,91 @@ at org.testng.TestNG.privateMain(TestNG.java:1354)
 at org.testng.TestNG.main(TestNG.java:1323)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsCampusUser -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:test.java.uiAutomation.testcases.Login@647e447]" name="aftermethod" is-config="true" duration-ms="1" started-at="2021-07-31T09:44:32Z" finished-at="2021-07-31T09:44:32Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:test.java.uiAutomation.testcases.Login@3bbc39f8]" name="aftermethod" is-config="true" duration-ms="2" started-at="2021-08-08T06:42:29Z" finished-at="2021-08-08T06:42:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="afterclass()[pri:0, instance:test.java.uiAutomation.testcases.Login@647e447]" name="afterclass" is-config="true" duration-ms="1" started-at="2021-07-31T09:44:32Z" finished-at="2021-07-31T09:44:32Z">
+        <test-method status="PASS" signature="afterclass()[pri:0, instance:test.java.uiAutomation.testcases.Login@3bbc39f8]" name="afterclass" is-config="true" duration-ms="1" started-at="2021-08-08T06:42:29Z" finished-at="2021-08-08T06:42:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterclass -->
       </class> <!-- test.java.uiAutomation.testcases.Login -->
+      <class name="test.java.uiAutomation.testcases.login2">
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:test.java.uiAutomation.testcases.login2@4ae3c1cd]" name="beforemethod" is-config="true" duration-ms="2" started-at="2021-08-08T06:42:29Z" finished-at="2021-08-08T06:42:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="SKIP" signature="loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@4ae3c1cd]" name="loginAsDistrictuser" duration-ms="0" depends-on-groups="1" started-at="2021-08-08T06:42:29Z" finished-at="2021-08-08T06:42:29Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method login2.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@4ae3c1cd] depends on not successfully finished methods in group "1"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method login2.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@4ae3c1cd] depends on not successfully finished methods in group "1"
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsDistrictuser -->
+        <test-method status="SKIP" signature="loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@4ae3c1cd]" name="loginAsCampusUser" duration-ms="0" depends-on-groups="1" started-at="2021-08-08T06:42:29Z" finished-at="2021-08-08T06:42:29Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method login2.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@4ae3c1cd] depends on not successfully finished methods in group "1"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method login2.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@4ae3c1cd] depends on not successfully finished methods in group "1"
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsCampusUser -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:test.java.uiAutomation.testcases.login2@4ae3c1cd]" name="aftermethod" is-config="true" duration-ms="2" started-at="2021-08-08T06:42:29Z" finished-at="2021-08-08T06:42:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+      </class> <!-- test.java.uiAutomation.testcases.login2 -->
       <class name="test.java.uiAutomation.testcases.suite">
-        <test-method status="PASS" signature="beforetest(java.lang.String)[pri:0, instance:test.java.uiAutomation.testcases.suite@3427b02d]" name="beforetest" is-config="true" duration-ms="1138" started-at="2021-07-31T09:44:31Z" finished-at="2021-07-31T09:44:32Z">
+        <test-method status="PASS" signature="beforetest(java.lang.String)[pri:0, instance:test.java.uiAutomation.testcases.suite@5ea434c8]" name="beforetest" is-config="true" duration-ms="1248" started-at="2021-08-08T06:42:14Z" finished-at="2021-08-08T06:42:15Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -497,7 +504,7 @@ at org.testng.TestNG.main(TestNG.java:1323)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:test.java.uiAutomation.testcases.suite@3427b02d]" name="endTest" is-config="true" duration-ms="837" started-at="2021-07-31T09:44:32Z" finished-at="2021-07-31T09:44:33Z">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:test.java.uiAutomation.testcases.suite@5ea434c8]" name="endTest" is-config="true" duration-ms="694" started-at="2021-08-08T06:42:29Z" finished-at="2021-08-08T06:42:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->

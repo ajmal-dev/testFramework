@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/2/2</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jul 31 05:44:31 EDT 2021</td>
+<td>Started on:</td><td>Sun Aug 08 02:42:14 EDT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2463 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15590 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='test.java.uiAutomation.testcases.Login.loginAsCampusUser()'><b>loginAsCampusUser</b><br>Test class: test.java.uiAutomation.testcases.Login</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;login_username&apos;]&quot;}
-  (Session info: chrome=92.0.4515.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;UW-IN-LPT0077&apos;, ip: &apos;172.26.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=92.0.4515.131)
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;UW-IN-LPT0077&apos;, ip: &apos;10.212.134.53&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e78125fb92f15f9556e342a3b4531f48
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edfa7e3167709ed01ae88f5b0987a535
 *** Element info: {Using=xpath, value=//input[@id=&apos;login_username&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -98,15 +97,14 @@ Session ID: e78125fb92f15f9556e342a3b4531f48
 	at test.java.uiAutomation.core.BrowserFunctions.enterData(BrowserFunctions.java:101)
 	at test.java.uiAutomation.pagefactory.LpLoginPage.enterusername(LpLoginPage.java:26)
 	at test.java.uiAutomation.testcases.Login.loginAsCampusUser(Login.java:27)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace358420513", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace358420513'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;login_username&apos;]&quot;}
-  (Session info: chrome=92.0.4515.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;UW-IN-LPT0077&apos;, ip: &apos;172.26.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1907467420", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1907467420'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=92.0.4515.131)
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;UW-IN-LPT0077&apos;, ip: &apos;10.212.134.53&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e78125fb92f15f9556e342a3b4531f48
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edfa7e3167709ed01ae88f5b0987a535
 *** Element info: {Using=xpath, value=//input[@id=&apos;login_username&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -150,17 +148,18 @@ Session ID: e78125fb92f15f9556e342a3b4531f48
 	at org.testng.TestNG.privateMain(TestNG.java:1354)
 	at org.testng.TestNG.main(TestNG.java:1323)
 </pre></div></td>
-<td>0</td>
-<td>test.java.uiAutomation.testcases.Login@647e447</td></tr>
+<td>12</td>
+<td>test.java.uiAutomation.testcases.Login@3bbc39f8</td></tr>
 <tr>
 <td title='test.java.uiAutomation.testcases.Login.loginAsDistrictuser()'><b>loginAsDistrictuser</b><br>Test class: test.java.uiAutomation.testcases.Login</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: chrome=92.0.4515.107)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;UW-IN-LPT0077&apos;, ip: &apos;172.26.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=92.0.4515.131)
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;UW-IN-LPT0077&apos;, ip: &apos;10.212.134.53&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e78125fb92f15f9556e342a3b4531f48
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edfa7e3167709ed01ae88f5b0987a535
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -171,14 +170,15 @@ Session ID: e78125fb92f15f9556e342a3b4531f48
 	at test.java.uiAutomation.core.BrowserFunctions.goTo(BrowserFunctions.java:127)
 	at test.java.uiAutomation.pagefactory.LpLoginPage.gotoLp(LpLoginPage.java:36)
 	at test.java.uiAutomation.testcases.Login.loginAsDistrictuser(Login.java:16)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1599823012", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1599823012'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: chrome=92.0.4515.107)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;UW-IN-LPT0077&apos;, ip: &apos;172.26.48.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace622772003", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace622772003'><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=92.0.4515.131)
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;UW-IN-LPT0077&apos;, ip: &apos;10.212.134.53&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e78125fb92f15f9556e342a3b4531f48
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\AMOHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edfa7e3167709ed01ae88f5b0987a535
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -218,8 +218,8 @@ Session ID: e78125fb92f15f9556e342a3b4531f48
 	at org.testng.TestNG.privateMain(TestNG.java:1354)
 	at org.testng.TestNG.main(TestNG.java:1323)
 </pre></div></td>
-<td>0</td>
-<td>test.java.uiAutomation.testcases.Login@647e447</td></tr>
+<td>1</td>
+<td>test.java.uiAutomation.testcases.Login@3bbc39f8</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -230,9 +230,9 @@ Session ID: e78125fb92f15f9556e342a3b4531f48
 </tr>
 <tr>
 <td title='test.java.uiAutomation.testcases.login2.loginAsCampusUser()'><b>loginAsCampusUser</b><br>Test class: test.java.uiAutomation.testcases.login2</td>
-<td><div><pre>java.lang.Throwable: Method login2.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@41fbdac4] depends on not successfully finished methods in group &quot;1&quot;
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7346738", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace7346738'><pre>java.lang.Throwable: Method login2.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@41fbdac4] depends on not successfully finished methods in group &quot;1&quot;
+<td><div><pre>java.lang.Throwable: Method login2.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@4ae3c1cd] depends on not successfully finished methods in group &quot;1&quot;
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace167693809", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace167693809'><pre>java.lang.Throwable: Method login2.loginAsCampusUser()[pri:1, instance:test.java.uiAutomation.testcases.login2@4ae3c1cd] depends on not successfully finished methods in group &quot;1&quot;
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -255,9 +255,9 @@ Session ID: e78125fb92f15f9556e342a3b4531f48
 <td>null</td></tr>
 <tr>
 <td title='test.java.uiAutomation.testcases.login2.loginAsDistrictuser()'><b>loginAsDistrictuser</b><br>Test class: test.java.uiAutomation.testcases.login2</td>
-<td><div><pre>java.lang.Throwable: Method login2.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@41fbdac4] depends on not successfully finished methods in group &quot;1&quot;
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace233519968", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace233519968'><pre>java.lang.Throwable: Method login2.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@41fbdac4] depends on not successfully finished methods in group &quot;1&quot;
+<td><div><pre>java.lang.Throwable: Method login2.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@4ae3c1cd] depends on not successfully finished methods in group &quot;1&quot;
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace571956559", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace571956559'><pre>java.lang.Throwable: Method login2.loginAsDistrictuser()[pri:0, instance:test.java.uiAutomation.testcases.login2@4ae3c1cd] depends on not successfully finished methods in group &quot;1&quot;
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)

@@ -24,7 +24,6 @@ public class WebDriver
                 Base.log.info("Setting chrome browser to selenium webdriver");
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
-                driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
                 Base.log.info("Environment set successfully in Chrome browser for linux os success!!!");
             }
             else if (browser.equalsIgnoreCase("firefox"))
@@ -32,7 +31,6 @@ public class WebDriver
                 Base.log.info("Setting firefox browser to selenium webdriver");
                 WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
-                driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
                 Base.log.info("Environment set successfully in Firefox browser for linux os success!!!");
             }
 
