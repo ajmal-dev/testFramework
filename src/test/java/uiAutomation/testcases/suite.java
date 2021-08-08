@@ -1,6 +1,6 @@
 package test.java.uiAutomation.testcases;
 
-import test.java.uiAutomation.core.Base;
+import test.java.core.Base;
 import org.apache.commons.mail.EmailException;
 import org.testng.annotations.*;
 
@@ -11,13 +11,13 @@ public class suite
 {
     @Parameters({"browser"})
     @BeforeTest()
-    public void beforetest(@Optional String browser) throws IOException, InterruptedException
+    public void beforetest() throws IOException, InterruptedException
     {
 //        TestCaseLibrary testcaseutility=new TestCaseLibrary();
         Base.setLog4j();
         String date=Base.getDate();
         Base.log.info("The Test Suite is  starting :  "+ date);
-        Base.setEnvironment(browser);
+        Base.setEnvironment();
 //        Base.extentConfiguration();
 
     }

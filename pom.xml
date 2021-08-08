@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <skipTests>true</skipTests>
+<!--        <skipTests>true</skipTests>-->
     </properties>
     <build>
         <resources>
@@ -25,6 +25,9 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <version>2.21.0</version>
             <configuration>
+                <includes>
+                    <include>**/TestRunner*.java </include>
+                </includes>
             </configuration>
         </plugin>
         <plugin>
@@ -76,19 +79,19 @@
             </executions>
         </plugin>
 
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.21.0</version>
-                    <configuration>
-                        <skipTests>true</skipTests>
-                        <!-- TestNG Suite XML files list for test execution -->
-                        <suiteXmlFiles>
-                            <suiteXmlFile>testng.xml</suiteXmlFile>
-                        </suiteXmlFiles>
-                        <skipTests>${skipTests}</skipTests>
-                    </configuration>
-                </plugin>
+<!--                <plugin>-->
+<!--                    <groupId>org.apache.maven.plugins</groupId>-->
+<!--                    <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                    <version>2.21.0</version>-->
+<!--                    <configuration>-->
+<!--                        <skipTests>true</skipTests>-->
+<!--                        &lt;!&ndash; TestNG Suite XML files list for test execution &ndash;&gt;-->
+<!--                        <suiteXmlFiles>-->
+<!--&lt;!&ndash;                            <suiteXmlFile>testng.xml</suiteXmlFile>&ndash;&gt;-->
+<!--                        </suiteXmlFiles>-->
+<!--                        <skipTests>${skipTests}</skipTests>-->
+<!--                    </configuration>-->
+<!--                </plugin>-->
             </plugins>
         </build>
     <dependencies>
@@ -96,8 +99,9 @@
         <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
-            <version>5.0.2</version>
+            <version>5.0.8</version>
         </dependency>
+
 
 
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
@@ -240,11 +244,11 @@
 
 
                                     <!-- Dependencies for cucumber -->
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java8 -->
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <dependency>
             <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-java8</artifactId>
-            <version>4.8.1</version>
+            <artifactId>cucumber-java</artifactId>
+            <version>6.10.4</version>
         </dependency>
 
 
@@ -252,46 +256,42 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-core</artifactId>
-            <version>4.8.1</version>
+            <version>6.10.4</version>
         </dependency>
+
+
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>4.8.1</version>
+            <version>6.10.4</version>
         </dependency>
+
+
 
         <!-- Extent Reports 4 Plugin-->
 
+        <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber6-adapter -->
         <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports-cucumber4-adapter</artifactId>
-            <version>1.0.12</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>io.cucumber</groupId>
-                    <artifactId>cucumber-java</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>io.cucumber</groupId>
-                    <artifactId>cucumber-core</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber6-adapter</artifactId>
+            <version>2.8.3</version>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13</version>
+            <version>4.13.2</version>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-dependency-plugin -->
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
             <version>3.1.1</version>
         </dependency>
-
     </dependencies>
 
 </project>

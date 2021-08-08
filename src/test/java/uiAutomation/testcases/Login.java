@@ -1,7 +1,7 @@
 package test.java.uiAutomation.testcases;
 
 import org.testng.annotations.*;
-import test.java.uiAutomation.core.Base;
+import test.java.core.Base;
 import test.java.uiAutomation.pagefactory.LpLoginPage;
 
 public class Login

@@ -1,24 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" >
-
-    <listeners>
-        <listener class-name="test.java.uiAutomation.core.TestListener" />
-    </listeners>
-    <test name="cucumberTest">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/amohammed/Desktop/test framework">
         <classes>
-            <class name="test.java.uiAutomation.testcases.suite"/>
-            <class name="test.java.uiAutomation.testcases.Login"/>
-            <class name="test.java.uiAutomation.testcases.login2"/>
+            <class name="test.java.apiAutomation.tests.AccountMS.testcases.AccountControllerTests">
+                <methods>
+                    <include name="createAccountTest"/>
+                    <include name="getAccountProfileTest"/>
+                    <include name="getAccountDetails"/>
+                    <include name="isAccountValid"/>
+                </methods>
+            </class>
+            <class name="test.java.apiAutomation.tests.AccountMS.testcases.ContractControllerTests">
+                <methods>
+                    <include name="createContractPost"/>
+                    <include name="getContractDetails"/>
+                </methods>
+            </class>
+            <class name="test.java.apiAutomation.tests.AccountMS.testcases.ServiceControllerTests">
+                <methods>
+                    <include name="patchAccountContract"/>
+                </methods>
+            </class>
+            <class name="test.java.apiAutomation.tests.Graphql.Graphqlcc.tests.CreateCcorder">
+                <methods>
+                    <include name="createCcOrder"/>
+                </methods>
+            </class>
+            <class name="test.java.uiAutomation.testcases.Login">
+                <methods>
+                    <include name="loginAsDistrictuser"/>
+                    <include name="loginAsCampusUser"/>
+                </methods>
+            </class>
+            <class name="test.java.uiAutomation.testcases.login2">
+                <methods>
+                    <include name="loginAsDistrictuser"/>
+                    <include name="loginAsCampusUser"/>
+                </methods>
+            </class>
         </classes>
     </test>
-    <test name="cucumberTest1">
-        <classes>
-            <class name="test.java.uiAutomation.testcases.suite"/>
-            <class name="test.java.uiAutomation.testcases.Login"/>
-            <class name="test.java.uiAutomation.testcases.login2"/>
-        </classes>
-    </test>
-
-
 </suite>

@@ -2,8 +2,8 @@ package test.java.uiAutomation.pagefactory;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import test.java.uiAutomation.core.Base;
-import test.java.uiAutomation.core.BrowserFunctions;
+import test.java.core.Base;
+import test.java.core.BrowserFunctions;
 
 public class LpLoginPage
 

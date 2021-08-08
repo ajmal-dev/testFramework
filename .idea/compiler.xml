@@ -9,9 +9,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="testFramework" />
         <module name="test_automation" />
-        <module name="test framework" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="11">
+      <module name="test framework" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

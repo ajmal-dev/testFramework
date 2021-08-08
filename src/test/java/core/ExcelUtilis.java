@@ -1,85 +1,20 @@
-package test.java.apiAutomation.corefunctions;
+package test.java.core;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.github.javafaker.Faker;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import test.java.core.Base;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Properties;
+import java.util.List;
 
-public class BaseFunctions
-
-{
-    private static ExtentSparkReporter htmlReporter=new ExtentSparkReporter(readProperties("extentReportPathRestApi"));
-    public static ExtentReports extentapi = new ExtentReports();
-    public static Logger log=Logger.getLogger("apitestlogger");
-    public static Faker generateData=new Faker();
-
-
-    public static void setLog4jForRestAssured() throws IOException
-    {
-        try {
-            System.out.println("Setting Logger........");
-            InputStream in = Base.class.getResourceAsStream("/log4japis.properties");
-            Properties prop = new Properties();
-            prop.load(in);
-            PropertyConfigurator.configure(prop);
-            System.out.println("The logger set successfuly");
-        }
-        catch(FileNotFoundException e)
-        {
-            e.printStackTrace();
-            System.out.println("The File  not found !!!!!, Log4j.properties");
-        }
-        catch(IOException e)
-        {
-            e.printStackTrace();
-            System.out.println("IO exception in setting log4j");
-        }
-    }
-
-    // **************Setting the configuration*********
-    public static void extentConfiguration() {
-
-        log.info("Setting the  Extennt html reporters");
-        extentapi.attachReporter(htmlReporter);
-        extentapi.setSystemInfo("Application", "APITESTS");
-        extentapi.setSystemInfo("Platform", System.getProperty("os.name"));
-        htmlReporter.config().setTheme(Theme.STANDARD);
-        htmlReporter.config().setDocumentTitle("API Test Automation Report");
-        log.info("Extent report configurations set successfully !!!!");
-
-    }
-
-    //**************** Method to read the properties file **********
-    public static String readProperties(String key) {
-        Properties prop = new Properties();
-        try
-        {
-            InputStream input=Base.class.getResourceAsStream("/properties.properties");
-            prop.load(input);
-        }
-        catch (IOException e)
-        {
-            Base.log.error("Cant Read from properties.properties file, Check the keywords or path of the properties file");
-            e.printStackTrace();
-        }
-        return prop.getProperty(key);
-    }
-
-    //read Data from resource xlsx file
-    public HashMap<String, ArrayList<String>> loadDataFromResource(String filepath, String sheetname, String exceltype) {
+public class ExcelUtilis {
+    Base baseObject = new Base();
+    private HashMap<String, ArrayList<String>> user_data = loadDataFromResource("/datainput.xlsx", "users", "vertical");
+    //**************** Method to Load all data in excel sheet (pass horizotal/Vertical data pattern)
+    public HashMap<String, ArrayList<String>> loadDataFromResource(String filepath,String sheetname, String exceltype) {
         HashMap<String, ArrayList<String>> data = new HashMap<String, ArrayList<String>>(); // Hashmap to store the excel data
         try {
             Base.log.info("Reading Data from Excel file............................");
@@ -172,5 +107,88 @@ public class BaseFunctions
             e.printStackTrace();
         }
         return data;                                                                                        //    Return the Hashmap to the method.
+    }
+
+    public void writeInExcel(String filepath,String sheetname,int rownum,int columnnum,String data) throws IOException {
+        File file = new File(filepath);       //reports/testcase_Report.xlsx
+        FileOutputStream outputStream = new FileOutputStream(file);
+        XSSFWorkbook workbook=new XSSFWorkbook();
+        XSSFSheet sheet=workbook.getSheet(sheetname);
+        Row row=sheet.getRow(rownum);
+        Cell cell=row.getCell(columnnum);
+        cell.setCellValue(data);
+        workbook.write(outputStream);
+    }
+
+    // ***************Method to write testcase execution status.***
+//    public static void testStatus(String testcaseNumber, String status, String reason) throws IOException {
+//        Base.log.info("Updating the testcase status in the test_case Report.xlsx");
+//        File file = new File(Base.propertiesRead("testCaseReportPath"));       //reports/testcase_Report.xlsx
+//        FileInputStream inputstream = new FileInputStream(file);
+//        XSSFWorkbook workbook = new XSSFWorkbook(inputstream);
+//        XSSFSheet sheet = workbook.getSheet("status");
+//        int rowcount = sheet.getPhysicalNumberOfRows();
+//        for (int i = 1; i <= rowcount; i++) {
+//            Row row = sheet.getRow(i);
+//            Cell cell = row.getCell(0);
+//            String value = cell.getStringCellValue();
+//
+//            if (value.equalsIgnoreCase(testcaseNumber)) {
+//                Cell statuscell = row.getCell(2);
+//                Cell reasoncell = row.getCell(3);
+//                statuscell.setCellValue(status);            // Assign the status of the test case
+//                reasoncell.setCellValue(reason);            // Write the reason for failure
+//                break;
+//            }
+//        }
+//        inputstream.close();
+//        FileOutputStream outputStream = new FileOutputStream(file);
+//        workbook.write(outputStream);
+//        outputStream.close();
+//
+//    }
+
+
+
+    // method to get index of the  type  of user from excel file sheet
+    public int getUserTypeIndex(String type)
+    {
+        int type_index=0;
+        List<String> type_list= user_data.get("Type");
+        int number_of_types=type_list.size();
+        for(int i=0;i<number_of_types;i++)
+        {
+            if(type_list.get(i).equalsIgnoreCase(type))
+            {
+                type_index=i;
+                break;
+            }
+        }
+        return type_index;
+    }
+    // Method to get user id from the type of  user
+    public String getUserId(String type)
+    {
+        int type_index=getUserTypeIndex(type);
+        String user_id=user_data.get("user id").get(type_index);
+        return user_id;
+    }
+    // get the password of the user by userid.
+    public String getPassword(String user_id)
+    {
+        String password=null;
+        int user_id_index=0;
+        List<String> users_list= user_data.get("user id");
+        int number_of_users=users_list.size();
+        for(int i=0;i<number_of_users;i++)
+        {
+            if(users_list.get(i).equalsIgnoreCase(user_id))
+            {
+                user_id_index=i;
+                password=user_data.get("password").get(user_id_index);
+                break;
+            }
+        }
+        return password;
     }
 }

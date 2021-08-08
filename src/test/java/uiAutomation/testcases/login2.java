@@ -3,7 +3,7 @@ package test.java.uiAutomation.testcases;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import test.java.uiAutomation.core.Base;
+import test.java.core.Base;
 import test.java.uiAutomation.pagefactory.LpLoginPage;
 
 public class login2

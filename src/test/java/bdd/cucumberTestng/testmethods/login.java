@@ -1,14 +1,9 @@
 package test.java.bdd.cucumberTestng.testmethods;
 
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.GherkinKeyword;
-import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.gherkin.model.Feature;
-import com.aventstack.extentreports.gherkin.model.Scenario;
 import org.junit.Assert;
-import test.java.bdd.cucumberTestng.coreSelenium.Base;
 import test.java.bdd.cucumberTestng.pageobjects.google.GoogleHomePage;
+import test.java.core.Base;
 
 import java.io.IOException;
 
@@ -34,7 +29,7 @@ public class login
         }
         catch (AssertionError | Exception e)
         {
-            Base.driver.close();
+           e.printStackTrace();
         }
     }
 
@@ -50,7 +45,7 @@ public class login
         }
         catch (AssertionError | Exception e)
         {
-            Base.driver.close();
+            e.printStackTrace();
         }
 
     }
